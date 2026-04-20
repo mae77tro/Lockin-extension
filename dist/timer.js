@@ -1,0 +1,2 @@
+"use strict";
+document.body.style.border = "199px solid red";
