@@ -2,15 +2,30 @@
 <html lang=""en-US">
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="timer_gui.css" />
+        <link rel="stylesheet" href="popup.css" />
     </head>
     <body>
-        <div id="popu-content">
-            <button>Start Timer</button>
-            <button>Pause Timer</button>
+        <div id="timer-input">
+            <input type="button" value="-" id="timer-decrease">
+            <input type="button" value="+" id="timer-increase">
+        </div>
+        <div id="timer">
+            <span class="digit" id = "hr">
+                00
+            </span>
+            <span class="digit" id="min">
+                00
+            </span>
+            <span class="digit" id="sec">
+                00
+            </span>
+        </div>
+        <div id="buttons">
+            <button id = 'start-btn'>Start Timer</button>
+            <button id = 'stop-btn'>Pause Timer</button>
             <button type="reset">Reset</button>
         </div>
-        <script src="timer_gui.js"></script>
+        <script src="popup.js"></script>
     </body>
 
 </html>
